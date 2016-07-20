@@ -25,6 +25,9 @@ Configurando Client
 
 Abrir o Pritunl Client:
 
+![](images/01.png)
+
+
 Após importar o arquivo .tar que recebido, faça o teste de conexão para algum endereço interno:
 ```
 ping <hostname ou ip>
