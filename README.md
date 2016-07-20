@@ -22,17 +22,41 @@ apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv CF8E292A &&
 
 Configurando Client
 ---
-
-Abrir o Pritunl Client:
-
+####Abrir o Pritunl Client:
 ![](https://github.com/cs-reinaldo-pinto/vpnpritunlclient/blob/master/imagens/01.png)
 
 
-Após importar o arquivo .tar que recebido, faça o teste de conexão para algum endereço interno:
+####Importar o arquivo gerado para o usuario:
+![](https://github.com/cs-reinaldo-pinto/vpnpritunlclient/blob/master/imagens/02.png)
+
+![](https://github.com/cs-reinaldo-pinto/vpnpritunlclient/blob/master/imagens/03.png)
+
+
+####Conectar através do client:
+![](https://github.com/cs-reinaldo-pinto/vpnpritunlclient/blob/master/imagens/04.png)
+
+
+####Coloque a chave (google authenticator ou key fornecida):
+![](https://github.com/cs-reinaldo-pinto/vpnpritunlclient/blob/master/imagens/05.png)
+
+Obs. Em alguns sistemas irá solictar a senha de usuário para confirmar.
+
+####Conectando:
+![](https://github.com/cs-reinaldo-pinto/vpnpritunlclient/blob/master/imagens/07.png)
+
+####VPN Conectada:
+![](https://github.com/cs-reinaldo-pinto/vpnpritunlclient/blob/master/imagens/08.png)
+
+
+Após importar o arquivo .tar recebido, se necessário faça o teste de conexão.
+---
+
+Teste um endereço interno:
 ```
 ping <hostname ou ip>
 ```
-Obs. Caso o endereço não responder pelo nome (DNS), teste pelo IP e verifique se o arquivo de configuração esta com o DNS da rede (VPN):
+Obs. Caso o endereço não responder pelo hostname (DNS), teste pelo IP. 
+Verifique se o arquivo de configuração do DNS da sua maquina esta com o DNS da rede da VPN:
 ```shell
 vi /etc/resolv.conf
 ```
