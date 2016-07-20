@@ -19,3 +19,10 @@ apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv CF8E292A &&
 \ apt-get update && 
 \ apt-get install pritunl-client-gtk -y
 ```
+
+Configure 
+
+Após importar o arquivo .tar que recebido, faça o teste de conexão:
+```
+ping <hostname ou ip>
+```
