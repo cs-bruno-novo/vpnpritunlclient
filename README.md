@@ -20,9 +20,22 @@ apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv CF8E292A &&
 \ apt-get install pritunl-client-gtk -y
 ```
 
-Configure 
+Configurando Client
+---
 
-Após importar o arquivo .tar que recebido, faça o teste de conexão:
+Abrir o Pritunl Client:
+
+Após importar o arquivo .tar que recebido, faça o teste de conexão para algum endereço interno:
 ```
 ping <hostname ou ip>
+```
+Obs. Caso o endereço não responder pelo nome (DNS), teste pelo IP e verifique se o arquivo de configuração esta com o DNS da rede (VPN):
+```shell
+vi /etc/resolv.conf
+```
+Deve conter um novo nameserver conforme exemplo:
+```shell
+search hostnamelocal
+nameserver 8.8.8.8 
+nameserver <ip_dns_rede_vpn>
 ```
