@@ -66,3 +66,6 @@ search hostnamelocal
 nameserver 8.8.8.8 
 nameserver <ip_dns_rede_vpn>
 ```
+
+
+Dúvidas ou sugestões estou a disposição.
