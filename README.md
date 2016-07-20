@@ -20,7 +20,7 @@ apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv CF8E292A &&
 \ apt-get install pritunl-client-gtk -y
 ```
 
-Configurando Client
+Configurando o Client
 ---
 ####Abrir o Pritunl Client:
 ![](https://github.com/cs-reinaldo-pinto/vpnpritunlclient/blob/master/imagens/01.png)
